@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  FaUser,
+  FaCalendarTimes,
+  FaMap,
+  FaLock,
+  FaPhone,
+  FaEnvelopeOpen,
+} from "react-icons/fa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="block bg-black"></div>
+      <div className="block">
+        <div className="container">
+          <img src="" className="user-img" />
+          <p className="user-title">Title</p>
+          <p className="user-value">Value</p>
+          <div className="values-list">
+            <button className="icon">
+              <FaUser />
+            </button>
+            <button className="icon">
+              <FaMap />
+            </button>
+            <button className="icon">
+              <FaPhone />
+            </button>
+            <button className="icon">
+              <FaCalendarTimes />
+            </button>
+            <button className="icon">
+              <FaEnvelopeOpen />
+            </button>
+            <button className="icon">
+              <FaLock />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
